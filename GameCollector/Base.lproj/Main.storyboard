@@ -1,14 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Ehz-XO-yWj">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="ViewController" customModule="GameCollector" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +21,129 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="O7S-Kg-4nq">
+                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="O7S-Kg-4nq" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Ix7-0Q-Ac0"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="O7S-Kg-4nq" secondAttribute="bottom" id="oxj-wO-SFE"/>
+                            <constraint firstAttribute="trailing" secondItem="O7S-Kg-4nq" secondAttribute="trailing" id="qMg-Wo-dmf"/>
+                            <constraint firstItem="O7S-Kg-4nq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="qgF-m1-K9N"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="xMo-lI-aQG">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="MlF-6j-8EI">
+                            <connections>
+                                <segue destination="C3D-N8-1kH" kind="show" id="y1t-Id-6H0"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="O7S-Kg-4nq" id="aW9-zj-n77"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="860" y="138.98050974512745"/>
+        </scene>
+        <!--Game View Controller-->
+        <scene sceneID="Eil-Xz-cQQ">
+            <objects>
+                <viewController id="C3D-N8-1kH" customClass="GameViewController" customModule="GameCollector" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dCO-3x-GQD"/>
+                        <viewControllerLayoutGuide type="bottom" id="VYr-lH-Wu3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rvf-nT-72m">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="redballoon.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="OcH-ee-r7h">
+                                <rect key="frame" x="47" y="64" width="280" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="0dX-KT-8ci"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="150" id="90a-gQ-h6k"/>
+                                    <constraint firstAttribute="width" constant="280" id="BWy-o7-LAL"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="280" id="jAU-e2-xSJ"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="McX-v0-NeN">
+                                <rect key="frame" x="172" y="313" width="30" height="30"/>
+                                <state key="normal" title="Add"/>
+                                <connections>
+                                    <action selector="addPressed:" destination="C3D-N8-1kH" eventType="touchUpInside" id="vNg-0w-Jrb"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Game Title" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hri-ba-UJK">
+                                <rect key="frame" x="47" y="253" width="280" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="McX-v0-NeN" firstAttribute="top" secondItem="Hri-ba-UJK" secondAttribute="bottom" constant="67" id="2YR-Hs-yFK"/>
+                            <constraint firstItem="OcH-ee-r7h" firstAttribute="centerX" secondItem="rvf-nT-72m" secondAttribute="centerX" id="9rn-dF-Ygx"/>
+                            <constraint firstItem="Hri-ba-UJK" firstAttribute="centerX" secondItem="rvf-nT-72m" secondAttribute="centerX" id="EfV-p4-qkz"/>
+                            <constraint firstItem="OcH-ee-r7h" firstAttribute="top" secondItem="dCO-3x-GQD" secondAttribute="bottom" constant="20" id="TQN-32-TtM"/>
+                            <constraint firstItem="McX-v0-NeN" firstAttribute="top" secondItem="Hri-ba-UJK" secondAttribute="bottom" constant="30" id="Ynq-2K-5s4"/>
+                            <constraint firstItem="Hri-ba-UJK" firstAttribute="width" secondItem="OcH-ee-r7h" secondAttribute="width" id="cwK-b4-BOf"/>
+                            <constraint firstItem="Hri-ba-UJK" firstAttribute="centerX" secondItem="rvf-nT-72m" secondAttribute="centerX" id="kmm-SG-GD8"/>
+                            <constraint firstItem="Hri-ba-UJK" firstAttribute="top" secondItem="OcH-ee-r7h" secondAttribute="bottom" constant="39" id="vuR-A3-ZPO"/>
+                            <constraint firstItem="McX-v0-NeN" firstAttribute="top" secondItem="Hri-ba-UJK" secondAttribute="bottom" constant="30" id="yKO-P5-P8G"/>
+                            <constraint firstItem="McX-v0-NeN" firstAttribute="centerX" secondItem="rvf-nT-72m" secondAttribute="centerX" id="yma-qA-jeV"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="BCp-3H-ySB">
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="camera" id="fuj-ho-VVT">
+                                <connections>
+                                    <action selector="cameraPressed:" destination="C3D-N8-1kH" id="v2s-Oi-lGa"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Photos" id="cgl-8i-ZIo">
+                                <connections>
+                                    <action selector="photosPressed:" destination="C3D-N8-1kH" id="urh-Wy-DY3"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="imageView" destination="OcH-ee-r7h" id="f0c-4n-dlo"/>
+                        <outlet property="textField" destination="Hri-ba-UJK" id="PXH-a4-9uL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s2N-Hl-EWc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1661.5999999999999" y="138.98050974512745"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="TV7-kx-DbT">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ehz-XO-yWj" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="1hz-cA-jHb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="5oN-S4-bXi"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jem-m8-JSB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-36" y="147"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="redballoon.jpg" width="1500" height="1600"/>
+    </resources>
 </document>

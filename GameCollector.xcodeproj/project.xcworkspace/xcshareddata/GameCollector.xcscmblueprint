@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "2B4ED3ACBE0047C99C944549C2817C5E02DE11D3",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "2B4ED3ACBE0047C99C944549C2817C5E02DE11D3" : 9223372036854775807,
+    "C670C6474B8F2331BFE4A3657956AEA1E133C2BE" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "B856257A-2E0E-405B-ABE6-13DA5B371C51",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "2B4ED3ACBE0047C99C944549C2817C5E02DE11D3" : "GameCollector\/",
+    "C670C6474B8F2331BFE4A3657956AEA1E133C2BE" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "GameCollector",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "GameCollector.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/dqzorro59\/GameCollector.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "2B4ED3ACBE0047C99C944549C2817C5E02DE11D3"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/dqzorro59\/swiftapp2.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C670C6474B8F2331BFE4A3657956AEA1E133C2BE"
+    }
+  ]
+}

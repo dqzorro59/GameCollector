@@ -13,6 +13,8 @@
 		E60114031E1F083D00D7B289 /* GameCollector.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E60114011E1F083D00D7B289 /* GameCollector.xcdatamodeld */; };
 		E60114051E1F083D00D7B289 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E60114041E1F083D00D7B289 /* Assets.xcassets */; };
 		E60114081E1F083D00D7B289 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E60114061E1F083D00D7B289 /* LaunchScreen.storyboard */; };
+		E60114101E1FCFD000D7B289 /* redballoon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E601140F1E1FCFD000D7B289 /* redballoon.jpg */; };
+		E60114121E1FD51900D7B289 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60114111E1FD51900D7B289 /* GameViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		E60114041E1F083D00D7B289 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E60114071E1F083D00D7B289 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E60114091E1F083D00D7B289 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E601140F1E1FCFD000D7B289 /* redballoon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = redballoon.jpg; sourceTree = "<group>"; };
+		E60114111E1FD51900D7B289 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,8 +61,10 @@
 			isa = PBXGroup;
 			children = (
 				E60113FA1E1F083D00D7B289 /* AppDelegate.swift */,
+				E601140F1E1FCFD000D7B289 /* redballoon.jpg */,
 				E60113FC1E1F083D00D7B289 /* ViewController.swift */,
 				E60113FE1E1F083D00D7B289 /* Main.storyboard */,
+				E60114111E1FD51900D7B289 /* GameViewController.swift */,
 				E60114041E1F083D00D7B289 /* Assets.xcassets */,
 				E60114061E1F083D00D7B289 /* LaunchScreen.storyboard */,
 				E60114091E1F083D00D7B289 /* Info.plist */,
@@ -130,6 +136,7 @@
 				E60114081E1F083D00D7B289 /* LaunchScreen.storyboard in Resources */,
 				E60114051E1F083D00D7B289 /* Assets.xcassets in Resources */,
 				E60114001E1F083D00D7B289 /* Main.storyboard in Resources */,
+				E60114101E1FCFD000D7B289 /* redballoon.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,6 +147,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E60114121E1FD51900D7B289 /* GameViewController.swift in Sources */,
 				E60114031E1F083D00D7B289 /* GameCollector.xcdatamodeld in Sources */,
 				E60113FD1E1F083D00D7B289 /* ViewController.swift in Sources */,
 				E60113FB1E1F083D00D7B289 /* AppDelegate.swift in Sources */,
